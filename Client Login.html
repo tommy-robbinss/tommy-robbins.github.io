@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ECTS Client Login</title>
+
+    <link href="../css/bootstrap-4.4.1.css" rel="stylesheet">
+
+  </head>
+  <body>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+       <a class="navbar-brand" href="#">East Coast Traffic Services</a>
+       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+       <span class="navbar-toggler-icon"></span>
+       </button>
+       <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+             <li class="nav-item ">
+                <a class="nav-link" href="ECTS.html">Home <span class="sr-only">(current)</span></a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link" href="New About Us.html">About Us <span class="sr-only"> (current) </span></a>
+             </li>
+             <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                What We Do
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                   <a class="dropdown-item" href="What we do - traffic management.html">Traffic Management</a>
+                   <div class="dropdown-divider"></div>
+                   <a class="dropdown-item" href="What we do - sign installations.html">Sign Installations</a>
+                   <div class="dropdown-divider"></div>
+                   <a class="dropdown-item" href="What we do - equipment hire.html">Equipment Hire</a>
+                </div>
+             </li>
+               <li class="nav-item">
+               <a class="nav-link" href="Contact Us.html">Contact Us <span class="sr-only"> (current) </span></a>
+             </li>
+</ul>
+<ul class="navbar-nav ml-auto">
+             <li class="nav-item active ">
+               <a class="nav-link" href="Client Login.html">Client Portal <span class="sr-only"> (current) </span></a>
+             </li>
+</ul>          
+       </div>
+    </nav>
+
+  <style>
+    body {
+      background-color: #f1f1f1;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      width: 600px;	
+      margin: 100px auto;
+      background-color: #fff;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      text-align: center;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      width: 100%;
+      height: 50px;
+      font-size: 12pt;
+      padding: 15px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      box-sizing: border-box; /* Added box-sizing property */
+    }
+
+    input[type="submit"] {
+      background-color: #4CAF50;
+      color: #fff;
+      padding: 15px;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+      width: 100%;
+      height: 50px;
+
+      box-sizing: border-box; /* Added box-sizing property */
+    }
+
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+  </style>
+<body>
+  <div class="container">
+    <h2>Login</h2>
+    <form action="authenticate.php" method="post">
+      <input type="text" name="username" placeholder="Username" required>
+      <input type="password" name="password" placeholder="Password" required>
+      <input type="submit" value="Login">
+    </form>
+  </div>
+</body>
+    </body>
+</html>
